@@ -1,44 +1,44 @@
 // https://www.codewars.com/kata/571ec274b1c8d4a61c0000c8
 
 function helloWorld() {
-  var str = "Hello World!";
+  let str = "Hello World!";
   console.log(str);
 }
 
 // https://www.codewars.com/kata/571edd157e8954bab500032d
 
-var v1 = 50;
+let v1 = 50;
 (v2 = 50), (v3 = 150), (v4 = 200), (v5 = 2), (v6 = 250);
 function equal1() {
-  var a = v1;
-  var b = v1;
+  let a = v1;
+  let b = v1;
   return a + b;
 }
 //Please refer to the example above to complete the following functions
 function equal2() {
-  var a = v6; //set number value to a
-  var b = v3; //set number value to b
+  let a = v6; //set number value to a
+  let b = v3; //set number value to b
   return a - b;
 }
 function equal3() {
-  var a = v1; //set number value to a
-  var b = v5; //set number value to b
+  let a = v1; //set number value to a
+  let b = v5; //set number value to b
   return a * b;
 }
 function equal4() {
-  var a = v4; //set number value to a
-  var b = v5; //set number value to b
+  let a = v4; //set number value to a
+  let b = v5; //set number value to b
   return a / b;
 }
 function equal5() {
-  var a = v6; //set number value to a
-  var b = v3; //set number value to b
+  let a = v6; //set number value to a
+  let b = v3; //set number value to b
   return a % b;
 }
 
 // https://www.codewars.com/kata/571edea4b625edcb51000d8e
 
-var a1 = "A",
+let a1 = "A",
   a2 = "a",
   b1 = "B",
   b2 = "b",
@@ -92,7 +92,7 @@ function getLast(arr) {
   return arr[arr.length - 1];
 }
 function pushElement(arr) {
-  var el = 1;
+  let el = 1;
   //push el to arr
   arr.push(el);
   return arr;
