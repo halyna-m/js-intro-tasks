@@ -23,6 +23,17 @@ const max = function (list) {
   return Math.max.apply(Math, list);
 };
 
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+
+function min(arr, toReturn) {
+  const minValue = Math.min.apply(Math, arr);
+  if (toReturn === "value") {
+    return minValue;
+  } else {
+    return arr.indexOf(minValue);
+  }
+}
+
 
 // https://www.codewars.com/kata/beginner-lost-without-a-map
 
