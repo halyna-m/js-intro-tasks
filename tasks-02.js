@@ -15,25 +15,14 @@ function DNAtoRNA(dna) {
 
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-const min = function (list) {
-  return Math.min.apply(Math, list);
-};
-
-const max = function (list) {
-  return Math.max.apply(Math, list);
-};
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
 
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
 function min(arr, toReturn) {
-  const minValue = Math.min.apply(Math, arr);
-  if (toReturn === "value") {
-    return minValue;
-  } else {
-    return arr.indexOf(minValue);
-  }
+  return (toReturn == 'value') ? Math.min(...arr) : arr.indexOf( Math.min(...arr) );
 }
-
 
 // https://www.codewars.com/kata/beginner-lost-without-a-map
 
